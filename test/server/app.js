@@ -31,7 +31,9 @@ mvc.start(conf, {
       if(req.xhr) {
         res.send(customErr);
       } else {
-        res.render('error', customErr);
+        res.render('error', {
+          error: customErr
+        });
       }
     }
   ]
