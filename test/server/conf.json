@@ -1,0 +1,28 @@
+{
+  "name":           "mobydick-test-server",
+  "port":           3010,
+  "sessionSecret":  "mobydick@2016",
+  "logs":           "./logs",
+
+  "views":          "./views",
+
+  "static": [
+    "./public",
+    "./bower_components"
+  ],
+
+  "routes": [
+    "./routes"
+  ],
+  
+  "redis": {
+    "host":         "localhost",
+    "port":         6379,
+    "prefix":       "loa",
+    "ttl":          1000,
+    "disableTTL":   true,
+    "db":           1,
+    "unref":        true,
+    "pass":         ""
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mobydick",
+  "version": "0.0.1",
+  "description": "mvc framework based on express",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/server/app"
+  },
+  "keywords": [
+    "mvc",
+    "nodejs",
+    "express"
+  ],
+  "author": "alvansea@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "connect-redis": "^3.0.2",
+    "cookie-parser": "^1.4.1",
+    "cookie-session": "^1.2.0",
+    "crypto": "0.0.3",
+    "ect": "^0.5.9",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "helmet": "^1.1.0",
+    "moment": "^2.11.2",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3",
+    "winston": "^2.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
+}

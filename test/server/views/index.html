@@ -1,0 +1,14 @@
+<% extend '_layout.html' %>
+
+<% block 'content': %>
+
+<h1>Hello Moby-Dick</h1>
+
+<% if @currentUser: %>
+  <p>Hello <%= @currentUser.name %>!</p>
+  <a href="/logout">Sign Out</a>
+<% else: %>
+  <p>Hello guest!</p>
+  <a href="/login">Sign In</a>
+<% end %>
+<% end %>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF8">
+<head>
+  <title>
+    <%= @title %>
+  </title>
+  <!-- General META -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Semantic META -->
+  <meta name="keywords" content="<%= @keywords %>">
+  <meta name="description" content="<%= @description %>">
+
+  <!-- Fav Icon -->
+  <!-- <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/common.css"/>
+
+  <!-- scripts -->
+  <script src="/js/common.js"></script>
+
+</head>
+<body>
+  <% content 'content' %>
+</body>
+</html>

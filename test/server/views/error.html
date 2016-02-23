@@ -1,0 +1,6 @@
+<% extend '_layout.html' %>
+
+<% block 'content': %>
+<h1><%= @error.status %> - <%= @errMsg %></h1>
+<pre><%- @error.stack %></pre>
+<% end %>
