@@ -33,5 +33,13 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alvansea/mobydick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alvansea/mobydick/issues"
+  },
+  "homepage": "https://github.com/Alvansea/mobydick#readme"
 }
