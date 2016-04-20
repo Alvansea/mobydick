@@ -1,10 +1,37 @@
 'use strict';
 
 var env = process.env.NODE_ENV || 'development';
-var conf = require('./conf.json');
 var mvc = require('../../lib/').mvc();
 
-mvc.start(conf, {
+mvc.start({
+  "name":           "mobydick-test-server",
+  "port":           3000,
+  "sessionSecret":  "mobydick@2016",
+  "logs":           "./logs",
+
+  "views":          "./views",
+
+  "static": [
+    "./public",
+    "./bower_components"
+  ],
+
+  "routes": [
+    "./routes/authCtrl.js",
+    "./routes"
+  ],
+  
+  "redis": {
+    "host":         "localhost",
+    "port":         6379,
+    "prefix":       "loa",
+    "ttl":          1000,
+    "disableTTL":   true,
+    "db":           1,
+    "unref":        true,
+    "pass":         ""
+  }
+}, {
 
   root: __dirname,
 
