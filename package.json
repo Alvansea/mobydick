@@ -33,7 +33,9 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mongoose": "^5.0.9"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alvansea/mobydick.git"

@@ -1,11 +1,8 @@
 'use strict';
 
-var mob = require('../../../lib');
-var validator = mob.validator();
-var page = mob.page();
-
 exports.routes = {
-  '/': { get: 'index' }
+  '/': { get: 'index' },
+  '/nowhere': { get: 'nowhere' },
 }
 
 exports.index = function(req, res) {

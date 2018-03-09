@@ -1,7 +1,5 @@
 'use strict';
 
-var logger = require('../logger').get('auth');
-
 exports.routes = {
   '/login': { get: 'doLogin' },
   '/logout': { get: ['auth', 'doLogout'] },
@@ -18,13 +16,13 @@ exports.doLogin = function(req, res) {
   req.session.user = {
     name: 'fishman'
   }
-  logger.info(req.session.user.name + ' sign in at ' + new Date());
+  console.log(req.session.user.name + ' sign in at ' + new Date());
   res.redirect('/');
 }
 
 exports.doLogout = function(req, res) {
   if(req.session.user) {
-    logger.info(req.session.user.name + ' sign out at ' + new Date());
+    console.log(req.session.user.name + ' sign out at ' + new Date());
   }
   req.session.user = null;
   res.redirect('/');

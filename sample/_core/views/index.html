@@ -1,0 +1,15 @@
+<% extend '_layout.html' %>
+
+<% block 'body': %>
+<% if @passport: %>
+  <span>Hello <%= @passport.name %>!</span>
+  <a href="/logout">Sign Out</a>
+<% else: %>
+  <span>Hello guest!</span>
+  <a href="/login">Sign In</a>
+<% end %>
+<p>
+  <a href="/books">Books</a>
+  <a href="/shelfs">Shelfs</a>
+</p>
+<% end %>

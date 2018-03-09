@@ -1,0 +1,6 @@
+{
+  "models": ["models"],
+  "routes": ["routes"],
+  "views": ["views"],
+  "statics": ["assets"]
+}
