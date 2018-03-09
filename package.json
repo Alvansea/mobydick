@@ -24,7 +24,6 @@
     "express-session": "^1.13.0",
     "helmet": "^1.1.0",
     "moment": "^2.11.2",
-    "mongoose": "^5.0.9",
     "morgan": "^1.7.0",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3",
