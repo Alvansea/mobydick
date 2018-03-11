@@ -16,7 +16,7 @@ var mobydick = require('../');
 
 // set variables
 mobydick.set('root', __dirname);
-mobydick.set('connection', require('./connection'));
+mobydick.set('connection', mobydick.require('connection'));
 mobydick.set('verbose', app.get('env') == 'development');
 
 // swallow models, routes and statics without bundle
@@ -30,7 +30,7 @@ mobydick.swallow('book');
 mobydick.swallow('shelf');
 
 // view engine setup
-var views = path.join(__dirname, '_core/views')
+var views = mobydick.path('_core/views')
 app.set('views', views);
 app.set('view engine', 'html');
 app.engine('html', ECT({ watch: true, root: views}).render);
